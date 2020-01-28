@@ -1,0 +1,20 @@
+Approach : 
+
+The solution begins with choosing an unordered_map for creating the char frequency for characters of the given string. As we all know that unlike unordered_map, map maintains the ordering sequence of its elements therefore, we used map to create a sorted verison of the char frequency. Now, we just need to iterate this map to thread its elements into the Resulting String.
+
+Hence, the solution can be broken into the following 3 steps:
+
+1) Using unordered_map to create a to create char frequency for characters of the given string.
+
+1) Converting it into sorted version using map data structure.
+
+2) Creating the Resultant String by char ascending frequency in O(N) time.
+
+
+SPACE and TIME Complexity:
+
+** Time Complexity : O(N*logN)
+Creating the char frequency will take O(N*logN) in time.
+
+** Space Complexity : O(N)
+Constant Space usage.
